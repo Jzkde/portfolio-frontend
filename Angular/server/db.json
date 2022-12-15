@@ -1,0 +1,157 @@
+{
+    "acrecade": [
+      {
+        "id": 1,
+        "name": "Diego Adrian Gallardo",
+        "titulo": "Full Stack Developer Jr",
+        "email": "dagjjj@gmail.com"
+      }
+    ],
+    "explab": [
+      {
+        "id": 1,
+        "empresa": "Universidad Nacional de Jujuy",
+        "cargo": "Grabo-verificador",
+        "periodo": "2002",
+        "descripcion": "Grabo-verificador de datos en el proceso de acreditación e implementación del sistema informático en Gestión de Alumnos"
+      },
+      {
+        "id": 2,
+        "empresa": "Sycar Correo Privado",
+        "cargo": "Encargado de Sector Sistemas y Administración",
+        "periodo": "2005-2008",
+        "descripcion": "Control y seguimiento postal, mediante la optimización de sistemas informáticos específicos"
+      },
+      {
+        "id": 3,
+        "empresa": "Sycar Correo Privado",
+        "cargo": "Gerente de Sucursal",
+        "periodo": "2008-2010",
+        "descripcion": "Tareas administrativo-contables, organización y planificación de las actividades específicas"
+      },
+      {
+        "id": 4,
+        "empresa": "Castillo S.A.C.I.F.I.A",
+        "cargo": "Vendedor de Salón",
+        "periodo": "2011-2012",
+        "descripcion": "Venta, manejo de programas específicos de control, facturación y stock"
+      },
+      {
+        "id": 5,
+        "empresa": "LC Construcciones",
+        "cargo": "Encargado de obras y personal",
+        "periodo": "2012-2014",
+        "descripcion": "Selección de personal, control de entrada y salida de personal, liquidación jornales"
+      },
+      {
+        "id": 6,
+        "empresa": "Fati Decoraciones",
+        "cargo": "Vendedor de Salón",
+        "periodo": "2014-a la fecha",
+        "descripcion": "Venta, manejo de programas específicos de control, facturación y stock"
+      }
+    ],
+    "estudios": [
+      {
+        "id": 1,
+        "anio": "1996",
+        "instituto":"Esc. Nº 12 “Bernardo Monteagudo”",
+        "titulo":"Nivel primario"
+      },
+      {
+        "id": 2,
+        "anio": "2001",
+        "instituto": "Colegio nº 1 “Teodoro Sánchez de Bustamante”",
+        "titulo":"Nivel secundario - Bachiller"
+      },
+      {
+        "id": 3,
+        "anio": "2002-2003",
+        "instituto": "Universidad Nacional de Jujuy",
+        "titulo":"Ingeniería en Informática - (Inconcluso)"
+      },
+      {
+        "id": 4,
+        "anio": "2012",
+        "instituto": " I. F. D. C. Nº 5 “José Eugenio Tello”",
+        "titulo":"Profesor de Psicología de EGB 3 y Polimodal"
+      }
+    ],
+    "cursos": [
+      {
+        "id": 1,
+        "nombre": "“I Jornadas de Estudiantes del Profesorado de Psicología”",
+        "organizador": "Instituto de Formación Docente Continua Nº 5 “José Eugenio Tello”",
+        "cargahoraria": 20,
+        "anio": 2004,
+        "caracter": "expositor"
+      },
+      {
+        "id": 2,
+        "nombre": "“II Jornadas de Estudiantes del Profesorado de Psicología”",
+        "organizador": "Instituto de Formación Docente Continua Nº 5 “José Eugenio Tello”",
+        "cargahoraria": 20,
+        "anio": 2005,
+        "caracter": "expositor"
+      },
+      {
+        "id": 3,
+        "nombre": "“Estrategias para la educación sexual, abordaje constructivo de los conflictos y prevención del alcoholismo, drogadicciones y suicidio”",
+        "organizador": "Facultad de Medicina de la Universidad Nacional de Tucumán",
+        "cargahoraria": 150,
+        "anio": 2006,
+        "caracter": "alumno"
+      },
+      {
+        "id": 4,
+        "nombre": "“Excel 2000”",
+        "organizador": "Facultad de Ingeniería de la Universidad Nacional de Jujuy",
+        "cargahoraria": 80,
+        "anio": 2002,
+        "caracter": "alumno"
+      },
+      {
+        "id": 5,
+        "nombre": "“Introducción al Hardware”",
+        "organizador": "Facultad de Ingeniería de la Universidad Nacional de Jujuy",
+        "cargahoraria": 80,
+        "anio": 2002,
+        "caracter": "alumno"
+      },
+      {
+        "id": 6,
+        "nombre": "“Gobierno Electrónico”",
+        "organizador": "Facultad de Ingeniería de la Universidad Nacional de Jujuy. San Salvador de Jujuy",
+        "cargahoraria": 80,
+        "anio": 2002,
+        "caracter": "alumno"
+      },
+      {
+        "id": 7,
+        "nombre": "Argentina Programa #Se Programar",
+        "organizador": "Ministerio de Economia - INTI",
+        "cargahoraria": 0,
+        "anio": 2022,
+        "caracter": "alumno"
+      },
+      {
+        "id": 8,
+        "nombre": "Argentina Programa #Yo Programo",
+        "organizador": "Ministerio de Economia - INTI",
+        "cargahoraria": 0,
+        "anio": 2022,
+        "caracter": "alumno"
+      }
+    ],
+    "habilidades": [
+      {
+        "id": 1
+     }
+    ],
+    "proyectos": [
+        {
+          "id": 1,
+          "nombre": "Mi primer Portfolio"
+       }
+    ]
+  }
