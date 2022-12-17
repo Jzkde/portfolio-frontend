@@ -1,0 +1,20 @@
+<section class="cursos">
+    <mat-card *ngFor="let curso of cursos" class="card">
+        <mat-card-header>
+            <mat-card-title-group>
+                <mat-card-title>
+                    <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" > <!-- aca van los logos --> {{curso.nombre}}
+                </mat-card-title>
+                    <mat-card-subtitle>
+                        Caracter: {{cursos.nombre }} - Carga Horaria: {{curso.cargahoraria}} 
+                    </mat-card-subtitle>
+                    <mat-card-subtitle> 
+                        Año: {{curso.anio}} 
+                    </mat-card-subtitle>
+            </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            
+        </mat-card-content>
+    </mat-card>
+</section>

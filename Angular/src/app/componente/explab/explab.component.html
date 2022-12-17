@@ -1,0 +1,16 @@
+<section class="trabajo">
+    <mat-card *ngFor="let explab of explab" class="card">
+        <mat-card-header>
+            <mat-card-title-group>
+                <mat-card-title>{{explab.empresa}}</mat-card-title>
+                <mat-card-subtitle> Cargo: {{explab.cargo}}</mat-card-subtitle>
+                <mat-card-subtitle> Periodo: {{explab.periodo}}</mat-card-subtitle>
+                <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" > <!-- aca van los logos -->
+            </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            {{explab.descripcion}}
+        </mat-card-content>
+    </mat-card>
+</section>
+

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DbService } from 'src/app/service/db.service';
 import { tap } from 'rxjs/operators';
+import { acercade } from './acerca.interface';
 
 @Component({
   selector: 'app-acercade',
@@ -8,10 +9,14 @@ import { tap } from 'rxjs/operators';
   styleUrls: ['./acercade.component.css']
 })
 export class AcercadeComponent implements OnInit {
-
-constructor(private acercadeSvc: DbService){}
-
-ngOnInit() {
-this.acercadeSvc.obtenerdb().subscribe((data: any) => console.log(data));
-}
-}
+  acerca!: acercade;
+  constructor(private acercadebSvc: DbService){}
+  
+  ngOnInit(): void {
+    this.acercadebSvc.acercadedb()
+    .pipe(
+      tap(data => this.acerca = data)
+    ) 
+    .subscribe();
+    }
+    }

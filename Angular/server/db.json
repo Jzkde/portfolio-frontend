@@ -1,10 +1,10 @@
 {
-	"acercade": [{
-    "nombre": "Diego Adrian Gallardo",
-	  "titulo": "Full Stack Developer Jr",
-	  "email": "dagjjj@gmail.com"
-  }
-],
+	"acercade": {
+			"nombre": "Diego Adrian Gallardo",
+			"titulo": "Full Stack Developer Jr",
+			"email": "dagjjj@gmail.com"
+  	}
+	,
   "explab": [{
 			"empresa": "Universidad Nacional de Jujuy",
 			"cargo": "Grabo-verificador",

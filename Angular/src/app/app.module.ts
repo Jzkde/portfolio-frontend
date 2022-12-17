@@ -9,12 +9,18 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AcercadeComponent } from './componente/acercade/acercade.component';
 import { EncabezadoComponent } from './componente/encabezado/encabezado.component';
+import { ExplabComponent } from './componente/explab/explab.component';
+import { EstudiosComponent } from './componente/estudios/estudios.component';
+import { HabilidadesComponent } from './componente/habilidades/habilidades.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AcercadeComponent,
-    EncabezadoComponent
+    EncabezadoComponent,
+    ExplabComponent,
+    EstudiosComponent,
+    HabilidadesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+.card{
+    min-width: 300px;
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(247, 247, 247);
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgb(218, 165, 32);
+}
+.card:hover{
+    background-color: rgb(163, 163, 163);
+}
+.trabajo{
+    display: flex;
+    flex-wrap: wrap;
+ justify-content: center;
+ margin-top: 20px;
+}
