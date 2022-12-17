@@ -1,0 +1,22 @@
+
+*{
+    background-color: rgb(54, 140, 197);
+}
+table{
+    width: 100%;
+}
+.logo{
+    width: 30%;
+}
+img{
+    width: 100%;
+}
+.titulo{
+    color: white;
+    font-size: 150%;
+    width: 70%;
+    padding-left: 5%;
+}
+.login{
+    margin-right: 50px;
+}

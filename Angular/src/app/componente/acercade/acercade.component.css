@@ -1,0 +1,25 @@
+
+.banner {
+    background-size: cover;
+    background-image: url(/assets/banner.jpg);
+    border: solid rgb(156, 115, 12) 1px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(218, 165, 32);
+}
+.perfil> img{
+    border-radius: 50%;
+    width: 15%;
+}
+
+h1{
+    font-size:150%;
+    margin-left: 15px;
+color: rgb(255, 255, 255)
+}
+p{
+color: rgb(255, 187, 0);
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 15px;
+font-size: 100%;
+}

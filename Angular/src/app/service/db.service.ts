@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DbService {
-private apiUrl = 'http://localhost:3000/'
+private apiUrl = 'http://localhost:3000/acercade'
 
   constructor(private http: HttpClient) { }
 obtenerdb(): Observable<any> {
