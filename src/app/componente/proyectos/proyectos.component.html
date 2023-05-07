@@ -1,0 +1,24 @@
+<div class="conteiner ">
+  <h1>Proyectos y Practicas <a class="btn btn-outline-danger" routerLink="proyectos/nuevo" *ngIf="inicio"><i
+    class="fa-solid fa-square-plus" style="color: #000000;"></i></a></h1>
+  <div class="conteiner trabajo">
+    <mat-card *ngFor="let proy of proyectos" class="card text-white">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title>{{proy.nombre}}</mat-card-title>
+          <mat-card-subtitle>Solicitante: {{proy.solicitante}}</mat-card-subtitle>
+          <img mat-card-xl-image src="{{proy.imagen}}">
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        {{proy.descricion}}
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="btn btn-outline-danger" routerLink="proyectos/editar/{{proy.id}}" *ngIf="inicio">
+          <i class="fa-solid fa-pencil" style="color: #000000;" ></i></button>
+        <button class="btn btn-outline-danger" (click)="borrar(proy.id!)" *ngIf="inicio"><i class="fa-solid fa-trash-can"
+            style="color: #000000;"></i></button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

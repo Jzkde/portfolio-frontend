@@ -1,0 +1,41 @@
+<table>
+  <tbody>
+    <tr>
+      <td class="logo"><img src="https://i.ibb.co/gZdYs1z/logo-arg.png" alt=""></td>
+      <td class="titulo">"Argentina Programa" #YoProgramo</td>
+      <td class="face"></td>
+      <td class="login">
+       
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="conteiner">
+  <div class="row mt-5">
+    <div class="col-md-2 mx-auto">
+      <h2>Iniciar Sesion</h2>
+      <form #fomr ="ngForm" (ngSubmit)="onLogin(fomr)">
+        <div class="mb-3">
+          <label for="email" >Email</label>
+          <input id="email" name ="email" type="email" class="form-control" [(ngModel)]="creds.email"  aria-describedby="emailHelp">
+          
+        </div>
+        <div class="mb-3">
+          <label for="password">Contraseña</label>
+          <input id="password" type="password" name="password" class="form-control " [(ngModel)]="creds.password">
+         
+    
+        </div>
+        <button type="submit" class="btn btn-outline-primary w-100 mt-2"><i class="fa-solid fa-right-to-bracket" style="color: #3e67ac;"></i> Ingresar</button>
+        <button  class="btn btn-outline-info w-100 mt-2" routerLink="">Volver</button>
+
+       
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+

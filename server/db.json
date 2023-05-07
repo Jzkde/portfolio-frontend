@@ -1,0 +1,196 @@
+{
+	"acercade": [{
+			"nombre": "Diego Adrian Gallardo",
+			"titulo": "Full Stack Developer Jr",
+			"email": "dagjjj@gmail.com",
+			"img":""
+  	}]
+	,
+  "explab": [
+	{
+			"empresa": "Universidad Nacional de Jujuy",
+			"cargo": "Grabo-verificador",
+			"periodo_desde": "2002",
+			"periodo_hasta": "2002",
+			"descripcion": "Grabo-verificador de datos en el proceso de acreditación e implementación del sistema informático en Gestión de Alumnos",
+			"img":""
+		},
+		{
+			"empresa": "Sycar Correo Privado",
+			"cargo": "Encargado de Sector Sistemas y Administración",
+			"periodo_desde": "2005",
+			"periodo_hasta": "2008",
+			"descripcion": "Control y seguimiento postal, mediante la optimización de sistemas informáticos específicos",
+			"img":""
+		},
+		{
+			"empresa": "Sycar Correo Privado",
+			"cargo": "Gerente de Sucursal",
+			"periodo_desde": "2008",
+			"periodo_hasta": "2010",
+			"descripcion": "Tareas administrativo-contables, organización y planificación de las actividades específicas",
+			"img":""
+		},
+		{
+			"empresa": "Castillo S.A.C.I.F.I.A",
+			"cargo": "Vendedor de Salón",
+			"periodo_desde": "2011",
+			"periodo_hasta": "2012",
+			"descripcion": "Venta, manejo de programas específicos de control, facturación y stock",
+			"img":""
+		},
+		{
+			"empresa": "LC Construcciones",
+			"cargo": "Encargado de obras y personal",
+			"periodo_desde": "2012",
+			"periodo_hasta": "2014",
+			"descripcion": "Selección de personal, control de entrada y salida de personal, liquidación jornales",
+			"img":""
+		},
+		{
+			"empresa": "Fati Decoraciones",
+			"cargo": "Vendedor de Salón",
+			"periodo_desde": "2014",
+			"periodo_hasta": "2023",
+			"descripcion": "Venta, manejo de programas específicos de control, facturación y stock",
+			"img":""
+		}
+	],
+	"estudios": [
+		{
+			"id": 1,
+			"anio": "1996",
+			"instituto": "Esc. Nº 12 “Bernardo Monteagudo”",
+			"titulo": "Nivel primario"
+		},
+		{
+			"id": 2,
+			"anio": "2001",
+			"instituto": "Colegio nº 1 “Teodoro Sánchez de Bustamante”",
+			"titulo": "Nivel secundario - Bachiller"
+		},
+		{
+			"id": 3,
+			"anio": "2002-2003",
+			"instituto": "Universidad Nacional de Jujuy",
+			"titulo": "Ingeniería en Informática - (Inconcluso)"
+		},
+		{
+			"id": 4,
+			"anio": "2012",
+			"instituto": " I. F. D. C. Nº 5 “José Eugenio Tello”",
+			"titulo": "Profesor de Psicología de EGB 3 y Polimodal"
+		}
+	],
+	"cursos": [
+		{
+			"nombre": "“I Jornadas de Estudiantes del Profesorado de Psicología”",
+			"organizador": "Instituto de Formación Docente Continua Nº 5 “José Eugenio Tello”",
+			"cargahoraria": 20,
+			"anio": 2004,
+			"caracter": "Expositor"
+		},
+		{
+			"nombre": "“II Jornadas de Estudiantes del Profesorado de Psicología”",
+			"organizador": "Instituto de Formación Docente Continua Nº 5 “José Eugenio Tello”",
+			"cargahoraria": 20,
+			"anio": 2005,
+			"caracter": "Expositor"
+		},
+		{
+			"nombre": "“Estrategias para la educación sexual, abordaje constructivo de los conflictos y prevención del alcoholismo, drogadicciones y suicidio”",
+			"organizador": "Facultad de Medicina de la Universidad Nacional de Tucumán",
+			"cargahoraria": 150,
+			"anio": 2006,
+			"caracter": "Alumno"
+		},
+		{
+			"nombre": "“Excel 2000”",
+			"organizador": "Facultad de Ingeniería de la Universidad Nacional de Jujuy",
+			"cargahoraria": 80,
+			"anio": 2002,
+			"caracter": "Alumno"
+		},
+		{
+			"nombre": "“Introducción al Hardware”",
+			"organizador": "Facultad de Ingeniería de la Universidad Nacional de Jujuy",
+			"cargahoraria": 80,
+			"anio": 2002,
+			"caracter": "Alumno"
+		},
+		{
+			"nombre": "“Gobierno Electrónico”",
+			"organizador": "Facultad de Ingeniería de la Universidad Nacional de Jujuy. San Salvador de Jujuy",
+			"cargahoraria": 80,
+			"anio": 2002,
+			"caracter": "Alumno"
+		},
+		{
+			"nombre": "Argentina Programa #Se Programar",
+			"organizador": "Ministerio de Economia - INTI",
+			"cargahoraria": 0,
+			"anio": 2022,
+			"caracter": "Alumno"
+		},
+		{
+			"nombre": "Argentina Programa #Yo Programo",
+			"organizador": "Ministerio de Economia - INTI",
+			"cargahoraria": 0,
+			"anio": 2022,
+			"caracter": "Alumno"
+		}
+	],
+	"habilidades": [
+    {
+		"nombre": "HTML",
+		"grado": 75,
+		"experiencia": {
+			"mes": 10,
+			"anio": 2022
+		},
+		"img":""
+	},
+	{
+		"nombre": "CSS",
+		"grado": "50",
+		"experiencia": {
+			"mes": 10,
+			"anio": 2022
+		},
+		"img":""
+	},
+	{
+		"nombre": "JavaScript",
+		"grado": "25",
+		"experiencia": {
+			"mes": 10,
+			"anio": 2022
+		},
+		"img":""
+	},
+	{
+		"nombre": "TypeScript",
+		"grado": "25",
+		"experiencia": {
+			"mes": 10,
+			"anio": 2022
+		},
+		"img":""
+	},
+	{
+		"nombre": "Angular",
+		"grado": "10",
+		"experiencia": {
+			"mes": 11,
+			"anio": 2022
+		},
+		"img":""
+	}
+],
+	"proyectos": [
+    {
+		"id": 1,
+		"nombre": "Mi primer Portfolio"
+	}
+]
+}

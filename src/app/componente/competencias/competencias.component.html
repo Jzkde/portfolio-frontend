@@ -1,0 +1,26 @@
+<div class="conteiner">
+    <br>
+    <h2>Soft Skills<a class="btn btn-outline-Primary" routerLink="softskills/nuevo" *ngIf="inicio"><i class="fa-solid fa-square-plus"
+                style="color: #000000;"></i></a></h2>
+    <section class="habycert ">
+        <section class="habilidades p-5">
+            <mat-card *ngFor="let sof of soft" class="card mx-auto text-secondary">
+                <mat-card-title class="text-center fs-2 "><b>{{sof.nombre}}</b></mat-card-title>
+                <br>
+                <mat-card-content>
+                    <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated"
+                            style="width: {{sof.grado}}%">
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn btn-outline-primary" routerLink="softskills/editar/{{sof.id}}" *ngIf="inicio">
+                        <i class="fa-solid fa-pencil" style="color: #fff;"></i></button>
+                    <button class="btn btn-outline-primary" (click)="borrar(sof.id!)" *ngIf="inicio"><i class="fa-solid fa-trash-can"
+                            style="color: #fff;"></i></button>
+                </mat-card-content>
+            </mat-card>
+        </section>
+    </section>
+</div>

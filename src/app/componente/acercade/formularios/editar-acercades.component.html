@@ -1,0 +1,54 @@
+
+<section>
+    <section class="banner">
+        <div>
+            <div class="perfil"><img src="{{acercade.imagen}}" alt=""></div>
+            <div>
+                <h1><b>{{acercade.nombre}}</b></h1>
+                <h2>{{acercade.titulo}}</h2>
+            </div>
+            <p>{{acercade.descricion}}</p>
+        </div>
+    </section>
+</section>
+
+
+
+
+
+
+<div class="conteiner">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <h2>Modificar Perfil</h2>
+            <form (ngSubmit)="onEditar()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="acercade.nombre"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" class="form-control" name="titulo" id="titulo" [(ngModel)]="acercade.titulo"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="text" class="form-control" name="email" id="email" [(ngModel)]="acercade.email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="descricion">Descripcion</label>
+                    <input type="text" class="form-control" name="descricion" id="descricion"
+                        [(ngModel)]="acercade.descricion" required>
+                </div>
+                <div>
+                    <label for="imagen">Imagen de Perfil</label>
+                    <input type="text" class="form-control" name="imagen" id="imagen" [(ngModel)]="acercade.imagen"
+                        required>
+                    <button class="btn btn-dark btn-block" [disabled]="!f.valid">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

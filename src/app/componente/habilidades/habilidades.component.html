@@ -1,0 +1,37 @@
+<div class="conteiner">
+  <h1>Habilidades y Competencias</h1>
+  <br>
+  <h2>Hard Skills<a class="btn btn-outline-Primary" routerLink="hardskills/nuevo" *ngIf="inicio"><i class="fa-solid fa-square-plus"
+        style="color: #000000;"></i></a></h2>
+  <section class="habycert ">
+    <section class="habilidades p-5">
+
+      
+
+      <mat-card *ngFor="let hard of hardskills" class="card mx-auto text-secondary">
+        <mat-card-title class="text-center">
+          {{hard.nombre}} - <img src="{{hard.logo}}" alt="" class="logo">
+        </mat-card-title>
+        <br>
+        <mat-card-content>
+          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="0"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+              style="width: {{hard.grado}}%">
+            </div>
+          </div>
+          <br>
+          <p class="text-center fs-4">
+            Experiencia: {{hard.nivel}}
+          </p>
+                   <button class="btn btn-outline-primary" routerLink="hardskills/editar/{{hard.id}}" *ngIf="inicio">
+            <i class="fa-solid fa-pencil" style="color: #fff;"></i></button>
+          <button class="btn btn-outline-primary" (click)="borrar(hard.id!)" *ngIf="inicio"><i class="fa-solid fa-trash-can"
+              style="color: #fff;"></i></button>
+        </mat-card-content>
+      </mat-card>
+
+
+    </section>
+  </section>
+ </div>

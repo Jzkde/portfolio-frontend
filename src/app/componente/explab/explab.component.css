@@ -1,0 +1,45 @@
+.card{
+    min-width: 300px;
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(247, 247, 247);
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgb(218, 165, 32);
+    background: #DAA520;
+    background: -moz-linear-gradient(top, #DAA520 0%, #D9DA56 50%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #DAA520 0%, #D9DA56 50%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #DAA520 0%, #D9DA56 50%, #FFFFFF 100%);
+}
+.card:hover{
+    background-color: rgb(163, 163, 163);
+}
+.trabajo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    display: block;
+}
+.formulario{
+   
+    border: 3px solid ;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px;
+    margin: auto;
+}   
+input{
+    margin-left: 10px;
+}
+.linea{
+    padding: 10px;
+    text-align: center;
+}
+.logo{
+    border-radius: 15px;
+}

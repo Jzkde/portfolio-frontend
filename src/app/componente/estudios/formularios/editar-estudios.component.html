@@ -1,0 +1,38 @@
+<div class="conteiner">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <h2>Modificar Curso</h2>
+            <form (ngSubmit)="onEditar()" novalidate #f="ngForm" class="p-3 bg-success-subtle border-success">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="curso.nombre"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="organizador">Organizador</label>
+                    <input type="text" class="form-control" name="organizador" id="organizador"
+                        [(ngModel)]="curso.organizador" required>
+                </div>
+                <div class="form-group">
+                    <label for="carga">Carga Horaria</label>
+                    <input type="text" class="form-control" name="carga" id="carga" [(ngModel)]="curso.carga" required>
+                </div>
+                <div class="form-group">
+                    <label for="anio">Año</label>
+                    <input type="text" class="form-control" name="anio" id="anio" [(ngModel)]="curso.anio" required>
+                </div>
+                <div class="form-group">
+                    <label for="caracter">Caracter</label>
+                    <input type="text" class="form-control" name="caracter" id="caracter" [(ngModel)]="curso.caracter"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="certificado">URL del Certificado</label>
+                    <input type="text" class="form-control" name="certificado" id="certificado"
+                        [(ngModel)]="curso.certificado" required>
+                    <button class="btn btn-success btn-block" [disabled]="!f.valid">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

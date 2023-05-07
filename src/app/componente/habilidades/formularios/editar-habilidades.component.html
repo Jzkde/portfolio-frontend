@@ -1,0 +1,56 @@
+<div class="conteiner">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <section class="habilidades p-5">
+                <mat-card class="card mx-auto">
+                    <mat-card-title class="text-center">
+                        {{hard.nombre}} - <img src="{{hard.logo}}" class="logo" alt="">
+                    </mat-card-title>
+                    <mat-card-content>
+                        <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="0"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
+                                style="width: {{hard.grado}}%">
+                            </div>
+                        </div>
+                        <p class="text-center fs-4">
+                            Experiencia: {{hard.nivel}}
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </section>
+        </div>
+    </div>
+
+
+
+    <div class="conteiner">
+        <div class="row mt-5">
+            <div class="col-md-4 mx-auto">
+                <h2>Modificar Hard Skills</h2>
+                <form (ngSubmit)="onEditar()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="hard.nombre"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="titulo">Titulo</label>
+                        <input type="text" class="form-control" name="titulo" id="titulo" [(ngModel)]="hard.grado"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="text" class="form-control" name="email" id="email" [(ngModel)]="hard.nivel"
+                            required>
+                    </div>
+                    <div>
+                        <label for="imagen">Imagen de Perfil</label>
+                        <input type="text" class="form-control" name="imagen" id="imagen" [(ngModel)]="hard.logo"
+                            required>
+                        <button class="btn btn-primary btn-block" [disabled]="!f.valid">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

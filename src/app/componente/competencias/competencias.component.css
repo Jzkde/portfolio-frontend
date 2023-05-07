@@ -1,0 +1,45 @@
+.habycert{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.habilidades{
+    background-color:  rgb(51, 158, 245);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgb(50, 40, 139);
+    margin: 1%;
+    border-radius: 25px;
+    width: 85%;
+}
+.card{
+    color:rgb(1, 0, 61);
+    min-width: 200px;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgb(32, 60, 218);
+    background: #111F71;
+    background: -moz-radial-gradient(center, #111F71 0%, #182DA2 50%, #2546FF 100%);
+    background: -webkit-radial-gradient(center, #111F71 0%, #182DA2 50%, #2546FF 100%);
+    background: radial-gradient(ellipse at center, #111F71 0%, #182DA2 50%, #2546FF 100%);
+    border-radius: 15px;
+}
+.card:hover{
+    background-color: rgb(0, 117, 172);
+}
+h1, h2{
+    text-align: center;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #2f18ff, 0 0 30px #2f18ff, 0 0 40px #2f18ff, 0 0 55px #2f18ff, 0 0 75px #2f18ff;
+
+}
+.logo{
+    width: 50px;
+}
+.btn2{
+    float: right;
+}

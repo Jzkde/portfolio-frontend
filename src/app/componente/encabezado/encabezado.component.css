@@ -1,0 +1,28 @@
+.table{
+    width: 100%;
+}
+.logo{
+    width: 25%;
+    background-color: rgb(54, 140, 197);
+}
+img{
+    width: 100%;
+}
+.titulo{
+    color: white;
+    font-size: 150%;
+    width: 70%;
+    padding-left: 5%;
+    background-color: rgb(54, 140, 197);
+    width: 68%;
+}
+.login{
+    margin-right: 50px;
+    background-color: rgb(54, 140, 197);
+}
+.btn{
+    margin: 10px;
+}.face{
+    width: 60%;
+    background-color: rgb(54, 140, 197)
+}

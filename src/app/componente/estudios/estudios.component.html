@@ -1,0 +1,59 @@
+<section class="principal">
+    <h1>Cursos y Jornadas
+        <a class="btn btn-outline-success" routerLink="cursos/nuevo" *ngIf="inicio"><i class="fa-solid fa-square-plus"
+                style="color: #000000;"></i></a>
+    </h1>
+    <div class="conteiner d-inline-flex p-2">
+        <section class="cursos">
+           
+            <mat-card class="card">
+                <div id="certific" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active img">
+                            <img src="https://i.ibb.co/y04TLwy/Sin-t-tulo.png" class="d-block w-100 carousel" alt="...">
+                        </div>
+                        <div class="carousel-item" *ngFor="let curso of cursos">
+                            <img src="{{curso.certificado}}" class="d-block w-100 img" alt="...">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#certific"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#certific"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </mat-card>
+            <mat-card *ngFor="let curso of cursos" class="card">
+                <mat-card-header>
+                    <mat-card-title-group>
+                        <mat-card-title>
+                            Titulo: {{curso.nombre}}
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            Organizado por: {{curso.organizador}}
+                        </mat-card-subtitle>
+                    </mat-card-title-group>
+                </mat-card-header>
+                <mat-card-content>
+                    <p> Caracter: {{curso.caracter}} - Carga Horaria: {{curso.carga}} hs.</p>
+                    <p> Año: {{curso.anio}}</p>
+                    <p> <button class="btn btn-success" routerLink="cursos/certificados/{{curso.id}}">Ver
+                            Certificado</button></p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button class="btn btn-outline-success" routerLink="cursos/editar/{{curso.id}}" *ngIf="inicio">
+                        <i class="fa-solid fa-pencil" style="color: #ffffff;"></i></button>
+                    <button class="btn btn-outline-success" (click)="borrar(curso.id!)" *ngIf="inicio"><i class="fa-solid fa-trash-can"
+                            style="color: #ffffff;"></i></button>
+                </mat-card-actions>
+            </mat-card>
+        </section>
+
+    </div>
+</section>

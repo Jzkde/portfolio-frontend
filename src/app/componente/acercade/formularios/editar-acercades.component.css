@@ -1,0 +1,37 @@
+
+.banner {
+    background-size: cover;
+    background-image: url(/assets/banner.jpg);
+    border: solid rgb(156, 115, 12) 1px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(218, 165, 32);
+}
+.perfil> img{
+    border-radius: 50%;
+    width: 15%;
+}
+
+h1{
+    font-size:150%;
+    margin-left: 15px;
+color: rgb(255, 255, 255)
+}
+p{
+color: rgb(146, 0, 0);
+margin-top: 10px;
+margin-bottom: 0;
+margin-left: 15px;
+font-size: 200%;
+
+background: #CE5937;
+background: -moz-linear-gradient(left, #CE5937 0%, #5901A4 31%, #C59237 100%);
+background: -webkit-linear-gradient(left, #CE5937 0%, #5901A4 31%, #C59237 100%);
+background: linear-gradient(to right, #CE5937 0%, #5901A4 31%, #C59237 100%);
+
+  -webkit-background-clip: text;
+color: transparent;  
+}
+h2{
+    color: yellowgreen;
+    margin-left: 15px
+}

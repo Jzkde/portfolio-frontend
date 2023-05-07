@@ -1,0 +1,36 @@
+.card{
+    text-align: center;
+    min-width: 300px;
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(247, 247, 247);
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgb(16, 68, 15);
+    background: #10440F;
+    background: -moz-linear-gradient(-45deg, #10440F 0%, #27A424 50%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(-45deg, #10440F 0%, #27A424 50%, #FFFFFF 100%);
+    background: linear-gradient(135deg, #10440F 0%, #27A424 50%, #FFFFFF 100%);
+}
+.card:hover{
+    background-color: rgb(163, 163, 163);
+}
+.cursos{
+    display: flex;
+    flex-wrap: wrap;
+ justify-content: center;
+ margin-top: 20px;
+}
+h1{
+    text-align: center;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+  
+.linea{
+    padding: 10px;
+    text-align: center;
+}
+.img{
+    max-height: 350px;
+}

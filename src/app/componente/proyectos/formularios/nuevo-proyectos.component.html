@@ -1,0 +1,29 @@
+<div class="conteiner">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <h2>Cargar Poryecto o Practica</h2>
+            <form (ngSubmit)="onCrear()" novalidate #f="ngForm" class="p-3 bg-danger-subtle border-danger">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Proyecto</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="solicitante">Solicitante</label>
+                    <input type="text" class="form-control" name="solicitante" id="solicitante"
+                        [(ngModel)]="solicitante" required>
+                </div>
+                <div class="form-group">
+                    <label for="descricion">Descripcion</label>
+                    <input type="text" class="form-control" name="descricion" id="descricion" [(ngModel)]="descricion"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="imagen">Imagen Representaviva</label>
+                    <input type="text" class="form-control" name="imagen" id="imagen" [(ngModel)]="imagen" required>
+                </div>
+                <br>
+                <button class="btn btn-danger btn-block" [disabled]="!f.valid">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

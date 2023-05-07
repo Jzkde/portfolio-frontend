@@ -1,0 +1,14 @@
+
+
+
+<mat-card class="card mx-auto" style="width: 75%">
+   
+    <img mat-card-image src="{{curso.certificado}}" alt="...">
+    <mat-card-content >
+        <p class="card-text text-center fs-3">{{curso.nombre}}</p>
+        <p class="card-text text-center fs-3">{{curso.organizador}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button class="btn btn-outline-success btn-block" (click)="volver()">Atras</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,36 @@
+<div class="conteiner">
+    <div class="row mt-5">
+        <div class="col-md-4 mx-auto">
+            <h2>Modificar Experiencia Laboral</h2>
+            <form (ngSubmit)="onEditar()" novalidate #f="ngForm" class="p-3 bg-warning-subtle border-warning">
+                <div class="form-group ">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" class="form-control" name="empresa" id="empresa"
+                        [(ngModel)]="experiencia.empresa" required>
+                </div>
+                <div class="form-group">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" class="form-control" name="cargo" id="cargo" [(ngModel)]="experiencia.cargo"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="periodo">Periodo</label>
+                    <input type="text" class="form-control" name="periodo" id="periodo"
+                        [(ngModel)]="experiencia.periodo" required>
+                </div>
+                <div class="form-group">
+                    <label for="descricion">Descripcion</label>
+                    <input type="text" class="form-control" name="descricion" id="descricion"
+                        [(ngModel)]="experiencia.descricion" required>
+                </div>
+                <div class="form-group">
+                    <label for="logo">URL del Logo</label>
+                    <input type="text" class="form-control" name="logo" id="logo" [(ngModel)]="experiencia.logo"
+                        required>
+                </div>
+                <br>
+                <button class="btn btn-warning btn-block" [disabled]="!f.valid">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
