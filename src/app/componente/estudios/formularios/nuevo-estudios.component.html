@@ -1,3 +1,18 @@
+<table>
+    <tbody>
+        <tr>
+            <td class="logo"><img src="https://i.ibb.co/gZdYs1z/logo-arg.png" alt=""></td>
+            <td class="titulo">"Argentina Programa" #YoProgramo</td>
+            <td class="face"><a href="https://www.facebook.com/dagjjj"><i class="fa-brands fa-facebook fa-beat fa-2xl"
+                        style="color: #fff;"></i></a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
 <div class="conteiner">
     <div class="row mt-5">
         <div class="col-md-4 mx-auto">
@@ -24,10 +39,21 @@
                     <input type="text" class="form-control" name="caracter" id="carga"[(ngModel)]="caracter" required>
                 </div>
                 <div class="form-group">
-                    <label for="cetificado">Certificado</label>
-                    <input type="text" class="form-control" name="certificado" id="certificado"[(ngModel)]="certificado" required>
+                    <label for="cetificado">URL del Certificado</label>
+                    <textarea style="resize: none;" rows="2" type="text" class="form-control" name="certificado" id="certificado"[(ngModel)]="certificado" required> </textarea>
                     <br>
-                    <button class="btn btn-success btn-block"[disabled]="!f.valid">Guardar</button>
+                    <div>
+                        <tr>
+                            <td>
+                                <button class="btn btn-success btn-block" [disabled]="!f.valid"> <i
+                                        class="fa-solid fa-floppy-disk" style="color: #000000;"></i> Guardar</button>
+                            </td>
+                            <td>
+                                <button class="btn  btn-success btn-block" routerLink=""><i
+                                        class="fa-solid fa-backward-fast" style="color: #000000;"></i> Volver</button>
+                            </td>
+                        </tr>
+                    </div>
                 </div>
             </form>
         </div>

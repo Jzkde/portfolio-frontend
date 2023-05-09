@@ -3,13 +3,15 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { Acercade } from '../partes/acercade';
+import { Db } from './db/db';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AcercaDeService {
 
-  private acercade = 'http://localhost:8080/api/acercade/'
+  private acercade: String = Db.apiURL + "acercade/"
+  //private acercade = 'https://port-back-05k7.onrender.com/api/acercade/'
 
   constructor(private http: HttpClient) { }
 

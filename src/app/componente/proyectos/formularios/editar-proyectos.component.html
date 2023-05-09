@@ -1,3 +1,17 @@
+<table>
+    <tbody>
+        <tr>
+            <td class="logof"><img src="https://i.ibb.co/gZdYs1z/logo-arg.png" alt=""></td>
+            <td class="titulo">"Argentina Programa" #YoProgramo</td>
+            <td class="face"><a href="https://www.facebook.com/dagjjj"><i class="fa-brands fa-facebook fa-beat fa-2xl"
+                        style="color: #fff;"></i></a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
 <div class="conteiner">
     <div class="row mt-5">
         <div class="col-md-4 mx-auto">
@@ -8,23 +22,50 @@
                     <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="proyectos.nombre"
                         required>
                 </div>
-                <div class="form-group">
-                    <label for="solicitante">Solicitante</label>
-                    <input type="text" class="form-control" name="solicitante" id="solicitante"
-                        [(ngModel)]="proyectos.solicitante" required>
+
+                <div class="form-group soli-anio">
+
+                    <label for="solicitante" class="text align-middle">Solicitante</label>
+                    <input type="text" class="form-control" name="solicitante" id="solicitante" [(ngModel)]="proyectos.solicitante" required>
+                    
+                    <label for="anio">Año</label>
+                    <input type="text" class="form-control" name="anio" id="anio"[(ngModel)]="proyectos.anio" required>
                 </div>
+
                 <div class="form-group">
                     <label for="descricion">Descripcion</label>
-                    <input type="text" class="form-control" name="descricion" id="descricion"
-                        [(ngModel)]="proyectos.descricion" required>
+                    <textarea style="resize: none;" rows="5" type="text" class="form-control" name="descricion"
+                        id="descricion" [(ngModel)]="proyectos.descricion" required></textarea>
                 </div>
+
                 <div class="form-group">
                     <label for="imagen">Imagen Representaviva</label>
-                    <input type="text" class="form-control" name="imagen" id="imagen" [(ngModel)]="proyectos.imagen"
-                        required>
+                    <textarea style="resize: none;" rows="2" type="text" class="form-control" name="imagen" id="imagen"
+                        [(ngModel)]="proyectos.imagen" required> </textarea>
+                </div>
+                
+                <div class="form-group ">
+                    <label for="linkproy" class="text align-middle">Link al Proyecto</label>
+                    <textarea style="resize: none;" rows="2" type="text" class="form-control" name="linkproy" id="linkproy" [(ngModel)]="proyectos.proy" required></textarea>
+                    
+                    <label for="linkrepo">Link al Reposiorio</label>
+                    <textarea style="resize: none;" rows="2" type="text" class="form-control" name="linkrepo" id="linkrepo"[(ngModel)]="proyectos.repo"></textarea>
                 </div>
                 <br>
-                <button class="btn btn-danger btn-block" [disabled]="!f.valid">Guardar</button>
+                <div>
+                    <tr>
+                        <td>
+                            <button class="btn btn-danger btn-block" [disabled]="!f.valid"> <i
+                                    class="fa-solid fa-floppy-disk" style="color: #000000;"></i>
+                                Guardar</button>
+                        </td>
+                        <td>
+                            <button class="btn  btn-danger btn-block" routerLink=""><i class="fa-solid fa-backward-fast"
+                                    style="color: #000000;"></i>
+                                Volver</button>
+                        </td>
+                    </tr>
+                </div>
             </form>
         </div>
     </div>

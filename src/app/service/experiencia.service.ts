@@ -2,12 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Experiencia } from '../partes/experiencia';
+import { Db } from './db/db';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExperienciaService {
-  private experiencia = 'http://localhost:8080/api/experiencia/'
+  private experiencia: String = Db.apiURL + "experiencia/"
+  //private acercade = 'https://port-back-05k7.onrender.com/api/acercade/'
+  
   constructor(private http: HttpClient) { }
 
   experiencialista(): Observable<Experiencia[]> {

@@ -11,10 +11,13 @@ import { ProyectosService } from 'src/app/service/proyectos.service';
 })
 export class NuevoProyectosComponent implements OnInit {
 
-  nombre: String = ''
-  solicitante: String = ''
-  descricion: String = ''
-  imagen: String = ''
+  nombre: string = ''
+  solicitante: string = ''
+  descricion: string = ''
+  imagen: string = ''
+  anio: number = 0
+  repo: string = ''
+  proy: string = ''
 
   constructor(
     private proyService: ProyectosService,
@@ -30,6 +33,9 @@ export class NuevoProyectosComponent implements OnInit {
       this.solicitante,
       this.descricion,
       this.imagen,
+      this.anio,
+      this.repo,
+      this.proy
     );
     this.proyService.proyectosnuevo(proy).subscribe(
       data => {

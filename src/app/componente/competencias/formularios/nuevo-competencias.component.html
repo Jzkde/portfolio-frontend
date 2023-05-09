@@ -1,3 +1,17 @@
+<table>
+    <tbody>
+        <tr>
+            <td class="logof"><img src="https://i.ibb.co/gZdYs1z/logo-arg.png" alt=""></td>
+            <td class="titulo">"Argentina Programa" #YoProgramo</td>
+            <td class="face"><a href="https://www.facebook.com/dagjjj"><i class="fa-brands fa-facebook fa-beat fa-2xl"
+                        style="color: #fff;"></i></a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
 <div class="conteiner">
     <div class="row mt-5">
         <div class="col-md-4 mx-auto">
@@ -31,7 +45,20 @@
                     <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="nombre" required>
                 </div>
                 <br>
-                <button class="btn btn-primary btn-block" [disabled]="!f.valid">Guardar</button>
+                <div>
+                    <tr>
+                        <td>
+                            <button class="btn btn-primary btn-block" [disabled]="!f.valid"> <i
+                                    class="fa-solid fa-floppy-disk" style="color: #000000;"></i>
+                                Guardar</button>
+                        </td>
+                        <td>
+                            <button class="btn  btn-primary btn-block" routerLink=""><i
+                                    class="fa-solid fa-backward-fast" style="color: #000000;"></i>
+                                Volver</button>
+                        </td>
+                    </tr>
+                </div>
             </form>
         </div>
     </div>

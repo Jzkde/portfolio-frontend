@@ -2,12 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Hardskills } from '../partes/hardskills';
+import { Db } from './db/db';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HardskillsService {
-  private hardskills = 'http://localhost:8080/api/hardskills/'
+  private hardskills: String = Db.apiURL + "hardskills/"
+  //private acercade = 'https://port-back-05k7.onrender.com/api/acercade/'
+  
   constructor(private http: HttpClient) { }
 
   hardskillslista(): Observable<Hardskills[]> {

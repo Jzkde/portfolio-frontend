@@ -21,17 +21,22 @@ export class ProyectosComponent implements OnInit {
     private router: Router,
     private login: LoginService
 
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.cargarproy();
     this.inicio = this.login.inicio();
   }
 
+  ira(url: string){
+    window.open(url, "_blank");
+}
+
   cargarproy(): void {
     this.proyService.proyectoslista().subscribe(
       data => {
         this.proyectos = data;
+//        console.log(data);
       },
       err => {
         this.toastr.error(err.error.mensaje, 'ERROR', {
@@ -44,22 +49,22 @@ export class ProyectosComponent implements OnInit {
     );
   }
 
-borrar(id: number)  {
-  
-  this.proyService.proyectosdelete(id).subscribe(
-    data => {
-      this.toastr.success('Proyecto Eliminado', 'OK', {
-        timeOut: 2500,
-        positionClass: 'toast-center-center'
-      });
-      this.cargarproy();
-     },
-     err => {
-      this.toastr.error(err.error.mensaje, 'ERROR', {
-        timeOut: 5000,
-        positionClass: 'toast-center-center'
-      });
-    }   
-  )
-}
+  borrar(id: number) {
+
+    this.proyService.proyectosdelete(id).subscribe(
+      data => {
+        this.toastr.success('Proyecto Eliminado', 'OK', {
+          timeOut: 2500,
+          positionClass: 'toast-center-center'
+        });
+        this.cargarproy();
+      },
+      err => {
+        this.toastr.error(err.error.mensaje, 'ERROR', {
+          timeOut: 5000,
+          positionClass: 'toast-center-center'
+        });
+      }
+    )
+  }
 }

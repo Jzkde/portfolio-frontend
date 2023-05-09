@@ -12,10 +12,13 @@ import { ProyectosService } from 'src/app/service/proyectos.service';
 export class EditarProyectosComponent implements OnInit {
 
   proyectos!: Proyectos
-  nombre: String = ''
-  solicitante: String = ''
-  descricion: String = ''
-  imagen: String = ''
+  nombre: string = ''
+  solicitante: string = ''
+  descricion: string = ''
+  imagen: string = ''
+  anio: number = 0
+  proy: string = ''
+  repo: string = ''
 
   constructor(
     private proyService: ProyectosService,
@@ -29,7 +32,7 @@ export class EditarProyectosComponent implements OnInit {
     this.proyService.proyectosdetalle(id).subscribe(
       data => {
         this.proyectos = data;
-        console.log(data)
+//        console.log(data)
       },
       err => {
         this.toastr.error(err.error.mensaje, 'ERROR', {
