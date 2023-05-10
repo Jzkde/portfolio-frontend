@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Hardskills } from 'src/app/partes/hardskills';
@@ -13,8 +14,12 @@ import { LoginService } from 'src/app/service/login.service';
 export class HabilidadesComponent implements OnInit {
 
   hardskills: Hardskills[] = [];
+  
   inicio: boolean = false;
-
+  
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.hardskills, event.previousIndex, event.currentIndex);
+  }
 
   constructor(
     private hardService: HardskillsService,

@@ -5,7 +5,7 @@
     </h1>
     <div class="conteiner d-inline-flex p-2">
         <section class="cursos">
-           
+
             <mat-card class="card">
                 <div id="certific" class="carousel slide">
                     <div class="carousel-inner">
@@ -17,13 +17,11 @@
                         </div>
 
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#certific"
-                        data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#certific" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#certific"
-                        data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#certific" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -49,8 +47,8 @@
                 <mat-card-actions>
                     <button class="btn btn-outline-success" routerLink="cursos/editar/{{curso.id}}" *ngIf="inicio">
                         <i class="fa-solid fa-pencil" style="color: #ffffff;"></i></button>
-                    <button class="btn btn-outline-success" (click)="borrar(curso.id!)" *ngIf="inicio"><i class="fa-solid fa-trash-can"
-                            style="color: #ffffff;"></i></button>
+                    <button class="btn btn-outline-success" (click)="borrar(curso.id!)" *ngIf="inicio"><i
+                            class="fa-solid fa-trash-can" style="color: #ffffff;"></i></button>
                 </mat-card-actions>
             </mat-card>
         </section>

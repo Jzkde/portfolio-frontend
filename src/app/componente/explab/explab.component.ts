@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Experiencia } from 'src/app/partes/experiencia';
@@ -17,6 +18,11 @@ export class ExplabComponent implements OnInit {
   experiencia: Experiencia[] = [];
 
   inicio: boolean = false;
+
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.experiencia, event.previousIndex, event.currentIndex);
+  }
+
 
   constructor(
     private experienciaService: ExperienciaService,

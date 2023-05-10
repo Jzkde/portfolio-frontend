@@ -4,12 +4,9 @@
   <h2>Hard Skills<a class="btn btn-outline-Primary" routerLink="hardskills/nuevo" *ngIf="inicio"><i
         class="fa-solid fa-square-plus" style="color: #000000;"></i></a></h2>
   <section class="habycert ">
-    <section class="habilidades p-5">
-
-
-
-      <mat-card *ngFor="let hard of hardskills" class="card mx-auto text-secondary">
-        <mat-card-title class="text-center">
+    <section  cdkDropList class="trabajo example-boundary habilidades p-5" (cdkDropListDropped)="drop($event)">
+      <mat-card *ngFor="let hard of hardskills" class="card mx-auto text-secondary example-box" cdkDragBoundary=".example-boundary" cdkDrag >
+        <mat-card-title class="text-center"  matTooltip="Pick Me Up">
           {{hard.nombre}} - <img src="{{hard.logo}}" alt="" class="logo">
         </mat-card-title>
         <br>

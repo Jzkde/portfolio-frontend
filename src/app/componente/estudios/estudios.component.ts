@@ -9,16 +9,17 @@ import { LoginService } from 'src/app/service/login.service';
   templateUrl: './estudios.component.html',
   styleUrls: ['./estudios.component.css']
 })
-export class EstudiosComponent  implements OnInit {
+export class EstudiosComponent implements OnInit {
 
   cursos: Cursos[] = [];
-  inicio:boolean = false;
+
+  inicio: boolean = false;
 
   constructor(
-    private cursosService:CursosService,
+    private cursosService: CursosService,
     private toastr: ToastrService,
     private login: LoginService
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.cargarcuros();
@@ -34,22 +35,22 @@ export class EstudiosComponent  implements OnInit {
         console.log(err);
       }
     );
-}
-borrar(id: number)  {
-  this.cursosService.cursosdelete(id).subscribe(
-    data => {
-      this.toastr.success('Curso Eliminado', 'OK', {
-        timeOut: 2500,
-        positionClass: 'toast-center-center'
-      });
-      this.cargarcuros();
-     },
-     err => {
-      this.toastr.error(err.error.mensaje, 'ERROR', {
-        timeOut: 5000,
-        positionClass: 'toast-center-center'
-      });
-    }   
-  )
-}
+  }
+  borrar(id: number) {
+    this.cursosService.cursosdelete(id).subscribe(
+      data => {
+        this.toastr.success('Curso Eliminado', 'OK', {
+          timeOut: 2500,
+          positionClass: 'toast-center-center'
+        });
+        this.cargarcuros();
+      },
+      err => {
+        this.toastr.error(err.error.mensaje, 'ERROR', {
+          timeOut: 5000,
+          positionClass: 'toast-center-center'
+        });
+      }
+    )
+  }
 }

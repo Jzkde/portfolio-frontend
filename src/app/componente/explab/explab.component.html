@@ -1,26 +1,25 @@
 <div class="titulo">
   <h1>Experiencia Laboral <a class="btn btn-outline-warning" routerLink="experiencia/nuevo" *ngIf="inicio"><i
         class="fa-solid fa-square-plus" style="color: #000000;"></i></a></h1>
-     
-</div>
-<section class="trabajo">
 
-  <mat-card *ngFor="let exp of experiencia" class="card">
-    <mat-card-header>
-      <mat-card-title-group>
-      <mat-card-title>{{exp.empresa}}</mat-card-title>
-      <mat-card-subtitle>Periodo: {{exp.periodo}} // Cargo: {{exp.cargo}}</mat-card-subtitle>
-      <img mat-card-sm-image src="{{exp.logo}}" alt="" class="logo">
-    </mat-card-title-group>
-    </mat-card-header>
-    <mat-card-content>
-      <p class="text-center">{{exp.descricion}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button class="btn btn-outline-warning" routerLink="experiencia/editar/{{exp.id}}" *ngIf="inicio">
-        <i class="fa-solid fa-pencil" style="color: #000000;"></i></button>
-      <button class="btn btn-outline-warning" (click)="borrar(exp.id!)" *ngIf="inicio"><i class="fa-solid fa-trash-can"
-          style="color: #000000;"></i></button>
-    </mat-card-actions>
-  </mat-card>
-</section>
+</div>
+<section cdkDropList class="trabajo example-boundary" (cdkDropListDropped)="drop($event)">
+      <mat-card *ngFor="let exp of experiencia" class="card example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>{{exp.empresa}}</mat-card-title>
+            <mat-card-subtitle>Periodo: {{exp.periodo}} // Cargo: {{exp.cargo}}</mat-card-subtitle>
+            <img mat-card-sm-image src="{{exp.logo}}" alt="" class="logo" matTooltip="Pick Me Up">
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="text-center">{{exp.descricion}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="btn btn-outline-warning" routerLink="experiencia/editar/{{exp.id}}" *ngIf="inicio">
+            <i class="fa-solid fa-pencil" style="color: #000000;"></i></button>
+          <button class="btn btn-outline-warning" (click)="borrar(exp.id!)" *ngIf="inicio"><i
+              class="fa-solid fa-trash-can" style="color: #000000;"></i></button>
+        </mat-card-actions>
+      </mat-card>
+   </section>
