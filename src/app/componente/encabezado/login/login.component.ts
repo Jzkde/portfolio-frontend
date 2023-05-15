@@ -21,7 +21,7 @@ export class LoginComponent {
     private router: Router) {
 
   }
-
+ 
   onLogin(fomr: NgForm) {
     console.log("form", fomr.value);
     this.login.logear(this.creds).subscribe(response => {

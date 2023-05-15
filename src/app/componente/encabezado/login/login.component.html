@@ -15,7 +15,7 @@
   <div class="row mt-5">
     <div class="col-md-2 mx-auto">
       <h2>Iniciar Sesion</h2>
-      <form #fomr ="ngForm" (ngSubmit)="onLogin(fomr)">
+      <form #fomr ="ngForm" (ngSubmit)="onLogin(fomr)" class="p-3 rounded-4 bg-light-subtle border-light">
         <div class="mb-3">
           <label for="email" >Email</label>
           <input id="email" name ="email" type="email" class="form-control" [(ngModel)]="creds.email"  aria-describedby="emailHelp">

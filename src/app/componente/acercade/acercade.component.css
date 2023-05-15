@@ -28,19 +28,15 @@ h1{
 color: rgb(255, 255, 255)
 }
 p{
-color: rgb(146, 0, 0);
+color:blanchedalmond;
 margin-top: 10px;
 margin-bottom: 0;
 margin-left: 15px;
 font-size: 200%;
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-background: #CE5937;
-background: -moz-linear-gradient(left, #CE5937 0%, #5901A4 31%, #C59237 100%);
-background: -webkit-linear-gradient(left, #CE5937 0%, #5901A4 31%, #C59237 100%);
-background: linear-gradient(to right, #CE5937 0%, #5901A4 31%, #C59237 100%);
 
-  -webkit-background-clip: text;
-color:rgba(255, 255, 255, .2) ;  
 }
 h2{
     color: yellowgreen;

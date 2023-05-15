@@ -7,8 +7,8 @@ import { Credentials } from '../partes/login';
   providedIn: 'root'
 })
 export class LoginService {
-  //private login = 'https://port-back-05k7.onrender.com/login/'
-  private login = "http://localhost:8080/login/"
+  private login = 'https://port-back-c0ij.onrender.com/login/'
+//  private login = "http://localhost:8080/login/"
 
   constructor(private http: HttpClient) { }
 
