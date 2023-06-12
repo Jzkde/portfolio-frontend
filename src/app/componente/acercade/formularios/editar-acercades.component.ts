@@ -26,6 +26,14 @@ export class EditarAcercadesComponent implements OnInit {
 
   ngOnInit() {
 
+    this.acercade = {
+      nombre: '',
+      titulo: '',
+      email: '',
+      descricion: '',
+      imagen: ''
+    }
+
     this.acercadeService.acercadedetalle(1).subscribe(
       data => {
         this.acercade = data;

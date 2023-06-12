@@ -28,6 +28,17 @@ export class EditarProyectosComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
+    this.proyectos = {
+      nombre:  '',
+      solicitante:  '',
+      descricion:  '',
+      imagen:  '',
+      anio:  0,
+      proy:  '',
+      repo:  ''
+    }
+
     const id = this.activatedRoute.snapshot.params['id'];
     this.proyService.proyectosdetalle(id).subscribe(
       data => {

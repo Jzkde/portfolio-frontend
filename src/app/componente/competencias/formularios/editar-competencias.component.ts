@@ -24,6 +24,12 @@ export class EditarCompetenciasComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
+    this.soft = {
+      nombre: '',
+      grado: 0
+    }
+
     const id = this.activatedRoute.snapshot.params['id'];
     this.softService.softskillsdetalle(id).subscribe(
       data => {

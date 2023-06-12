@@ -1,4 +1,3 @@
-import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Cursos } from 'src/app/partes/cursos';
@@ -27,6 +26,16 @@ export class CertificadosComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
+    this.curso = {
+      nombre: '',
+      organizador: '',
+      carga: 0,
+      anio: 0,
+      caracter: '',
+      certificado: ''
+    }
+    
     const id = this.activatedRoute.snapshot.params['id'];
     this.cursosService.cursosdedetalle(id).subscribe(
       data => {

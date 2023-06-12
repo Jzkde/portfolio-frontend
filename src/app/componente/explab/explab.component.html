@@ -4,7 +4,7 @@
 
 </div>
 <section cdkDropList class="trabajo example-boundary" (cdkDropListDropped)="drop($event)">
-      <mat-card *ngFor="let exp of experiencia" class="card example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+      <mat-card *ngFor="let exp of experiencia" class="card example-box" cdkDragBoundary=".example-boundary" cdkDrag  >
         <mat-card-header>
           <mat-card-title-group>
             <mat-card-title>{{exp.empresa}}</mat-card-title>

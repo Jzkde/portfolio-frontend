@@ -28,6 +28,16 @@ export class EditarEstudiosComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
+    this.curso = {
+      nombre: '',
+      organizador: '',
+      carga: 0,
+      anio: 0,
+      caracter: '',
+      certificado: ''
+    }
+
     const id = this.activatedRoute.snapshot.params['id'];
     this.cursosService.cursosdedetalle(id).subscribe(
       data => {

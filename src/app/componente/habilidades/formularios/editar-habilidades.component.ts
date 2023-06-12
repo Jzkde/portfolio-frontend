@@ -13,8 +13,8 @@ export class EditarHabilidadesComponent implements OnInit {
 
   hard!: Hardskills
   nombre: String = ''
-  grado: String = ''
-  nivel: number = 0
+  grado: number = 0
+  nivel: String = ''
   logo: String = ''
 
   constructor(
@@ -25,6 +25,14 @@ export class EditarHabilidadesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
+    this.hard = {
+      nombre: '',
+      grado: 0 ,
+      nivel: '',
+      logo: ''
+    }
+
     const id = this.activatedRoute.snapshot.params['id'];
     this.hardService.hardskillsdetalle(id).subscribe(
       data => {

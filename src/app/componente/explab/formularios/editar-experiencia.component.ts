@@ -26,6 +26,15 @@ export class EditarExperienciaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    
+    this.experiencia = {
+      empresa: '',
+      cargo: '',
+      periodo: '',
+      descricion: '',
+      logo: ''
+    }
+
     const id = this.activatedRoute.snapshot.params['id'];
     this.experienciaService.explabdetalle(id).subscribe(
       data => {
