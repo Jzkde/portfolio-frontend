@@ -8,8 +8,7 @@ import { Db } from './db/db';
   providedIn: 'root'
 })
 export class ProyectosService {
-  private proyectos: String = Db.apiURL + "proyectos/"
-  //private acercade = 'https://port-back-05k7.onrender.com/api/acercade/'
+  private proyectos: String = Db.finalApi() + "proyectos/"
   
   constructor(private http: HttpClient) { }
 

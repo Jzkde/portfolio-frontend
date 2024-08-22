@@ -1,6 +1,9 @@
 export const Db = {
 
-//  apiURL: "http://localhost:8080/api/"
-  apiURL: "https://port-back-c0ij.onrender.com/api/"
+  baseApi: "http://localhost:8081",
+ // baseApi:'https://port-back-c0ij.onrender.com',
 
+  finalApi() {
+    return `${this.baseApi}/api/`;
+  }
 };

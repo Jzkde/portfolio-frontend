@@ -9,8 +9,7 @@ import { Db } from './db/db';
 })
 export class CursosService {
 
-  private cursos: String = Db.apiURL + "cursos/"
-  //private acercade = 'https://port-back-05k7.onrender.com/api/acercade/'
+  private cursos: String = Db.finalApi() + "cursos/"
   
   constructor(private http: HttpClient) { }
 

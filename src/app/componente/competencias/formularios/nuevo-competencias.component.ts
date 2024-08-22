@@ -37,7 +37,7 @@ export class NuevoCompetenciasComponent implements OnInit {
         this.router.navigate(['/'])
       },
       err => {
-        this.toastr.error(err.error.mensaje, 'ERROR', {
+        this.toastr.error(err.error, 'ERROR', {
           timeOut: 5000,
           positionClass: 'toast-center-center'
         });

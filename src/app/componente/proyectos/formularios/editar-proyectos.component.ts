@@ -30,23 +30,23 @@ export class EditarProyectosComponent implements OnInit {
   ngOnInit() {
 
     this.proyectos = {
-      nombre:  '',
-      solicitante:  '',
-      descricion:  '',
-      imagen:  '',
-      anio:  0,
-      proy:  '',
-      repo:  ''
+      nombre: '',
+      solicitante: '',
+      descricion: '',
+      imagen: '',
+      anio: 0,
+      proy: '',
+      repo: ''
     }
 
     const id = this.activatedRoute.snapshot.params['id'];
     this.proyService.proyectosdetalle(id).subscribe(
       data => {
         this.proyectos = data;
-//        console.log(data)
+        //        console.log(data)
       },
       err => {
-        this.toastr.error(err.error.mensaje, 'ERROR', {
+        this.toastr.error(err.error, 'ERROR', {
           timeOut: 5000,
           positionClass: 'toast-center-center'
         });
@@ -66,12 +66,11 @@ export class EditarProyectosComponent implements OnInit {
         this.router.navigate(['/'])
       },
       err => {
-        this.toastr.error(err.error.mensaje, 'ERROR', {
+        this.toastr.error(err.error, 'ERROR', {
           timeOut: 5000,
           positionClass: 'toast-center-center'
         });
-        this.router.navigate(['/'])
-
+        console.log(err);
       }
     );
   }

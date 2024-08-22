@@ -2,16 +2,15 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable, ɵɵresolveBody } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Credentials } from '../partes/login';
+import { Db } from './db/db';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
-  private login = 'https://port-back-c0ij.onrender.com/login/'
-//  private login = "http://localhost:8080/login/"
+  private login = Db.baseApi + '/login/'
 
   constructor(private http: HttpClient) { }
-
 
   logear(creds: Credentials) {
     return this.http.post(this.login, creds, { observe: 'response' }).pipe(map((response: HttpResponse<any>) => {
@@ -25,9 +24,10 @@ export class LoginService {
     }))
 
   };
-public salir():void {
-localStorage.removeItem('token');
-}
+
+  public salir(): void {
+    localStorage.removeItem('token');
+  }
 
   public getToken() {
     return localStorage.getItem('token');
@@ -36,6 +36,4 @@ localStorage.removeItem('token');
   public inicio(): boolean {
     return this.getToken() != null;
   }
-  
-
 }

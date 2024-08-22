@@ -8,8 +8,7 @@ import { Db } from './db/db';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  private experiencia: String = Db.apiURL + "experiencia/"
-  //private acercade = 'https://port-back-05k7.onrender.com/api/acercade/'
+  private experiencia: String = Db.finalApi() + "experiencia/"
   
   constructor(private http: HttpClient) { }
 

@@ -8,8 +8,7 @@ import { Db } from './db/db';
   providedIn: 'root'
 })
 export class SoftskillsService {
-  private softskills: String = Db.apiURL + "softskills/"
-  //private acercade = 'https://port-back-05k7.onrender.com/api/acercade/'
+  private softskills: String = Db.finalApi() + "softskills/"
   
   constructor(private http: HttpClient) { }
 

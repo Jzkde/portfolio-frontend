@@ -10,8 +10,7 @@ import { Db } from './db/db';
 })
 export class AcercaDeService {
 
-  private acercade: String = Db.apiURL + "acercade/"
-  //private acercade = 'https://port-back-05k7.onrender.com/api/acercade/'
+  private acercade: String = Db.finalApi() + "acercade/"
 
   constructor(private http: HttpClient) { }
 
