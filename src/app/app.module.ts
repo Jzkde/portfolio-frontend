@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -38,47 +38,38 @@ import { LogoutComponent } from './componente/encabezado/login/logout/logout.com
 
 
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    AcercadeComponent,
-    EncabezadoComponent,
-    ExplabComponent,
-    EstudiosComponent,
-    HabilidadesComponent,
-    
-    CompetenciasComponent,
-    ProyectosComponent,
-    PortfolioComponent,
-    EditarAcercadesComponent,
-    EditarCompetenciasComponent,
-    NuevoCompetenciasComponent,
-    NuevoEstudiosComponent,
-    EditarEstudiosComponent,
-    EditarExperienciaComponent,
-    NuevoExperienciaComponent,
-    NuevoHabilidadesComponent,
-    EditarHabilidadesComponent,
-    EditarProyectosComponent,
-    NuevoProyectosComponent,
-    CertificadosComponent,
-    LoginComponent,
-    LogoutComponent,
-    
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    HttpClientModule,
-    FormsModule,
-    ToastrModule.forRoot(),
-    ReactiveFormsModule 
-  ],
-  providers: [{
-    provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true
-  }],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        AcercadeComponent,
+        EncabezadoComponent,
+        ExplabComponent,
+        EstudiosComponent,
+        HabilidadesComponent,
+        CompetenciasComponent,
+        ProyectosComponent,
+        PortfolioComponent,
+        EditarAcercadesComponent,
+        EditarCompetenciasComponent,
+        NuevoCompetenciasComponent,
+        NuevoEstudiosComponent,
+        EditarEstudiosComponent,
+        EditarExperienciaComponent,
+        NuevoExperienciaComponent,
+        NuevoHabilidadesComponent,
+        EditarHabilidadesComponent,
+        EditarProyectosComponent,
+        NuevoProyectosComponent,
+        CertificadosComponent,
+        LoginComponent,
+        LogoutComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        FormsModule,
+        ToastrModule.forRoot(),
+        ReactiveFormsModule], providers: [{
+            provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true
+        }, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
